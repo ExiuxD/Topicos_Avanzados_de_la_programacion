@@ -17,3 +17,11 @@ void mostrarDimensiones(const cv::Mat& img);
 
 // Dibuja figuras geométricas en la imagen
 void dibujarFiguras(cv::Mat& img);
+
+// Captura video de la cámara y muestra en escala de grises
+void camaraEscalaGrises();
+
+// Captura video de la cámara, dibuja figuras y muestra dimensiones
+void camaraConEjercicios();
+
+void camaraDobleVista();

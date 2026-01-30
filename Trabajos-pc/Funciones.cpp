@@ -101,3 +101,79 @@ putText(
 	waitKey(0);
 
 }
+
+// Captura video de la cámara y muestra en escala de grises
+void camaraEscalaGrises() {
+    VideoCapture cap(0); // 0 = cámara por defecto
+
+    // Verificar si la cámara abrió
+    if (!cap.isOpened()) {
+        cout << "No se pudo abrir la camara" << endl;
+        return;
+    }
+
+    Mat frame;
+    Mat frameGray;
+    cout << "Presiona ESC para salir..." << endl;
+
+    while (true) {
+        cap >> frame; // Capturar frame
+
+        if (frame.empty()) {
+            cout << "Frame vacio" << endl;
+            break;
+        }
+
+        // Convertir a escala de grises
+        cvtColor(frame, frameGray, COLOR_BGR2GRAY);
+
+        // Mostrar ventanas
+        imshow("Camara - Color", frame);
+        imshow("Camara - Grises", frameGray);
+        // Salir con ESC
+        if (waitKey(1) == 27) {
+            break;
+        }
+    }
+
+    cap.release();
+    destroyAllWindows();
+}
+
+// Captura video de la cámara, dibuja figuras y muestra dimensiones
+void camaraDobleVista() {
+    VideoCapture cap(0);
+
+    if (!cap.isOpened()) {
+        cout << "No se pudo abrir la camara" << endl;
+        return;
+    }
+
+    Mat frame;
+    Mat frameSmall;
+
+    cout << "Presiona ESC para salir..." << endl;
+
+    while (true) {
+        cap >> frame;
+
+        if (frame.empty()) {
+            break;
+        }
+
+        // Resize SOLO para la vista pequeña
+        resize(frame, frameSmall, Size(320, 240));
+
+        // Mostrar ventanas
+        imshow("Camara - Normal", frame);
+        imshow("Camara - Chiquita", frameSmall);
+
+        // ESC
+        if (waitKey(1) == 27) {
+            break;
+        }
+    }
+
+    cap.release();
+    destroyAllWindows();
+}

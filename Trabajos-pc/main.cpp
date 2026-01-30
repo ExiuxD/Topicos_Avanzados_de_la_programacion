@@ -6,12 +6,12 @@ using namespace std;
 int main() {
 	Mat img;
 
-    if (!cargarImagen(
-        "C:/Users/exiux/Downloads/Opencv_test_mau/x64/Debug/img/girasol.jpg",
+    /* if (!cargarImagen(
+        "C:/Users/famil/Documents/GitHub/Topicos_Avanzados_de_la_programacion/Trabajos-pc/img/girasol.jpg",
         img
     )) {
         return -1;
-    }
+    }*/
 
    /*mostrarImagenRedimencionada(
    "C:/Users/exiux/Downloads/Opencv_test_mau/x64/Debug/img/girasol.jpg",
@@ -25,4 +25,10 @@ int main() {
 
     /*dibujarFiguras(img);
 	return 0;*/
+
+    // Ejecutar ejercicio de camara
+   
+    /*camaraEscalaGrises(); */
+
+    camaraDobleVista();
 }
