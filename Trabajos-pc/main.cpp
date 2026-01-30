@@ -1,12 +1,28 @@
 // main.cpp
 #include "Funciones.h"
+using namespace cv;
+using namespace std;
 
 int main() {
-    cargarYMostrarImagen(
-        "C:/Users/exiux/Downloads/Opencv_test_mau/x64/Debug/img/girasol.jpg",
-        636,
-        316
-    );
+	Mat img;
 
-    return 0;
+    if (!cargarImagen(
+        "C:/Users/exiux/Downloads/Opencv_test_mau/x64/Debug/img/girasol.jpg",
+        img
+    )) {
+        return -1;
+    }
+
+   /*mostrarImagenRedimencionada(
+   "C:/Users/exiux/Downloads/Opencv_test_mau/x64/Debug/img/girasol.jpg",
+       1024,
+       1024
+	);
+   */
+       
+
+    /*mostrarDimensiones(img); */
+
+    /*dibujarFiguras(img);
+	return 0;*/
 }
