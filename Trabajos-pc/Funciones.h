@@ -2,8 +2,12 @@
 // funciones.h
 #ifndef FUNCIONES_H
 #define FUNCIONES_H
+#include <opencv2/opencv.hpp>
+#include <string>
 
-void Trabajo1();
-int sumar(int a, int b);
-
+bool cargarYMostrarImagen(
+    const std::string& ruta,
+    int ancho,
+    int alto
+);
 #endif
