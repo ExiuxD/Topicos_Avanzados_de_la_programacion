@@ -180,12 +180,12 @@ La documentación técnica completa se genera automáticamente con Doxygen:
 
 ## 👥 Autores
 
-- [Tu nombre]
-- [Nombre de compañeros si aplica]
+- [Mauricio Martínez Navarrete]
+- [Juan Pablo Rodriguez Bustamante]
 
 ## 📄 Licencia
 
-Este proyecto es parte de la evaluación académica de la materia [Nombre de la materia].
+Este proyecto es parte de la evaluación académica de la materia [Topicos avanzados de la programación].
 
 ---
 
