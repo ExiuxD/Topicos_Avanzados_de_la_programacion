@@ -1,12 +1,11 @@
 var indexSectionsWithContent =
 {
-  0: ".acdflmoprst",
+  0: "cdfop",
   1: "f",
   2: "o",
-  3: ".afprs",
+  3: "fp",
   4: "dfo",
-  5: "c",
-  6: "adlmprt"
+  5: "c"
 };
 
 var indexSectionNames =
@@ -16,18 +15,16 @@ var indexSectionNames =
   2: "namespaces",
   3: "files",
   4: "functions",
-  5: "typedefs",
-  6: "pages"
+  5: "typedefs"
 };
 
 var indexSectionLabels =
 {
-  0: "All",
-  1: "Classes",
-  2: "Namespaces",
-  3: "Files",
-  4: "Functions",
-  5: "Typedefs",
-  6: "Pages"
+  0: "Todos",
+  1: "Clases",
+  2: "Espacios de nombres",
+  3: "Archivos",
+  4: "Funciones",
+  5: "typedefs"
 };
 
