@@ -633,5 +633,9 @@ namespace OpenCVImageProcessor
             DetenerCamara();
             base.OnFormClosing(e);
         }
+
+
     }
+
+
 }
