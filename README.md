@@ -147,19 +147,6 @@ El sistema permite procesar video en tiempo real desde la cámara web:
 - **Controles dinámicos**: Ajusta parámetros mientras se reproduce el video
 - **Multithreading**: El procesamiento ocurre en segundo plano para no bloquear la interfaz
 
-## 📁 Estructura del Proyecto
-
-OpenCVImageProcessor/
-├── docs/                       # Documentación generada con Doxygen
-│   └── html/
-├── OpenCVImageProcessor/       # Código fuente
-│   ├── Form1.cs               # Lógica principal de la interfaz
-│   ├── Form1.Designer.cs      # Diseño de controles
-│   ├── Program.cs             # Punto de entrada
-│   └── ...
-├── Doxyfile                    # Configuración de documentación
-├── README.md                   # Este archivo
-└── OpenCVImageProcessor.sln    # Solución de Visual Studio
 
 
 ## 🔧 Tecnologías Utilizadas
