@@ -6,29 +6,29 @@ using namespace std;
 int main() {
 	Mat img;
 
-    /* if (!cargarImagen(
-        "C:/Users/famil/Documents/GitHub/Topicos_Avanzados_de_la_programacion/Trabajos-pc/img/girasol.jpg",
+    if (!cargarImagen(
+        "C:/Users/exiux/Downloads/Opencv_test_mau/x64/Debug/img/girasol.jpg",
         img
     )) {
         return -1;
-    }*/
+    }
 
-   /*mostrarImagenRedimencionada(
+   mostrarImagenRedimencionada(
    "C:/Users/exiux/Downloads/Opencv_test_mau/x64/Debug/img/girasol.jpg",
        1024,
        1024
 	);
-   */
+   
        
 
-    /*mostrarDimensiones(img); */
+    mostrarDimensiones(img); 
 
-    /*dibujarFiguras(img);
-	return 0;*/
+    dibujarFiguras(img);
+	return 0;
 
-    // Ejecutar ejercicio de camara
+    //Ejecutar ejercicio de camara
    
-    /*camaraEscalaGrises(); */
+    camaraEscalaGrises(); 
 
     camaraDobleVista();
 }

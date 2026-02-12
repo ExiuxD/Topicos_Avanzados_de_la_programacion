@@ -177,3 +177,41 @@ void camaraDobleVista() {
     cap.release();
     destroyAllWindows();
 }
+
+// Captura video de la cámara, dibuja figuras y muestra dimensiones
+void camaraConFiguritas() {
+    cv::VideoCapture cap(0);
+
+    if (!cap.isOpened()) {
+        std::cout << "No se pudo abrir la camara" << std::endl;
+        return;
+    }
+
+    cv::Mat frame;
+    bool dimensionesMostradas = false;
+
+    while (true) {
+        cap >> frame;
+
+        if (frame.empty()) {
+            break;
+        }
+
+        // === APLICAR EJERCICIOS ===
+        dibujarFiguras(frame);          // Ejercicio 3
+
+        if (!dimensionesMostradas) {    // Ejercicio 2 (solo una vez)
+            mostrarDimensiones(frame);
+            dimensionesMostradas = true;
+        }
+
+        cv::imshow("Camara con Figuras", frame);
+
+        if (cv::waitKey(1) == 27) { // ESC
+            break;
+        }
+    }
+
+    cap.release();
+    cv::destroyAllWindows();
+}
