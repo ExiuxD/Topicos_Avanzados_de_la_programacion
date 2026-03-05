@@ -1,0 +1,9 @@
+========================================
+NOMBRE(S): Mauricio
+APELLIDO PATERNO: Martínez
+APELLIDO MATERNO: Navarrete
+FECHA DE NACIMIENTO: 05/07/2006
+CURP: CURP
+DOMICILIO: Tercer cerrada de los arcos #12
+========================================
+
