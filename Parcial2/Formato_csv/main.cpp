@@ -28,9 +28,9 @@ namespace MiCodigoNativo {
     };
 
     // FUNCION PARA LEER CSV
-    vector<Estudiante> leerCSV(const string& nombreArchivo) {
+    vector<Estudiante> leerCSV(const string& estudiantes) {
         vector<Estudiante> lista;
-        ifstream archivo(nombreArchivo);
+        ifstream archivo(estudiantes);
 
         if (!archivo.is_open()) {
             cout << "Error: No se encontró el archivo 'estudiantes.csv'" << endl;
